@@ -143,8 +143,9 @@ const Navbar: FC = () => {
           className="flex items-center gap-2 cursor-pointer z-[110]" 
           onClick={() => handleNavClick('home')}
         >
-          <div className="p-1.5 rounded-full bg-green-500/10 border border-green-500/20">
-            <Leaf className="w-5 h-5 md:w-6 md:h-6 text-green-500" />
+          <div className="p-1.5 h-10 w-10 relative rounded-full bg-green-500/10 border border-green-500/20">
+            {/* <Leaf className="w-5 h-5 md:w-6 md:h-6 text-green-500" /> */}
+            <Image src={'/club.png'} fill className='object-cover' alt='logo'/>
           </div>
           <div className="flex flex-col justify-center">
             <span className="text-sm md:text-xl font-black text-white leading-none tracking-tight">
