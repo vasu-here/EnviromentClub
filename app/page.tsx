@@ -359,9 +359,9 @@ const TiltableGridItem: FC<TiltableGridItemProps> = ({ imgPath, title, descripti
         '--shadowOpacity': '0.3',
         transform: 'perspective(1000px) rotateX(var(--tiltX)) rotateY(var(--tiltY)) scale(var(--scaleFactor))',
         boxShadow: '0 10px 30px rgba(0, 0, 0, var(--shadowOpacity))',
-        transitionProperty: 'transform, box-shadow, var(--tiltX), var(--tiltY)' as React.CSSProperties['transitionProperty'], // Type assertion for custom props
+        transitionProperty: 'transform, box-shadow, var(--tiltX), var(--tiltY)',
         transformStyle: 'preserve-3d',
-      }}
+      } as React.CSSProperties}
     >
       {/* Image Placeholder with subtle movement */}
       <div className="absolute inset-0 transition-transform duration-500 group-hover:scale-110" style={{
